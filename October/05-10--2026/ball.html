@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background: linear-gradient(red, blue);
+            border: 2px solid;
+            margin: 0 auto;
+            animation-name: yoo;
+            animation-duration: 1.2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes yoo {
+            0% {
+                transform: translateY(930px);
+                transition-timing-function: ease-in;
+
+            }
+            100% {
+                transform: translateY(0px) rotate(360deg);
+              
+
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

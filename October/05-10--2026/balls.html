@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #main {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+
+        }
+
+        #main div {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            transform-style: preserve-3d;
+            border: 2px solid blue;
+        }
+
+        #one {
+            background-color: orange;
+            /* animation-delay: 0s; */
+        }
+
+        #two {
+            background-color: blue;
+            animation-delay: 0.2s;
+        }
+
+        #three {
+            background-color: rgb(185, 176, 12);
+            animation-delay: 0.4s;
+
+        }
+
+        .circle {
+            animation-name: yoo;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            transition-timing-function: ease-in-out;
+
+        }
+
+        @keyframes yoo {
+            0% {
+                transform: translateY(0px) scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: translateY(-40px) scale(1.3);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: translateY(0px) scale(1);
+                opacity: 1;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="one" class="circle"></div>
+        <div id="two" class="circle"></div>
+        <div id="three" class="circle"></div>
+    </div>
+</body>
+
+</html>
