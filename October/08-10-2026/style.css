@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(24, 23, 23);
+}
+#navv div {
+    color: antiquewhite;
+    font-size: 20px;
+}
+#main {
+    display: grid;
+    grid-template-rows: repeat(4, 360px);
+    grid-template-columns: repeat(4, 360px);
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    gap: 12px;
+    margin-top: 40px;
+
+}
+#main div {
+    /* border: 2px solid rgb(6, 197, 204); */
+    border-radius: 4%;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+}
+#main1 {
+    margin: 40px auto;
+    height: 90vh;
+    width: 90vw;
+}
+#boxone {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+img {
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+
+
+}
+img:hover {
+    scale: 1.2;
+    /* backdrop-filter: blur(100); */
+}
+#main div p {
+    z-index: 10;
+    position: absolute;
+    bottom: 20px;
+    left: 35px;
+    color: antiquewhite;
+    opacity: 0;
+    transition: 1s;
+}
+#main div:hover p {
+    opacity: 1;
+}
