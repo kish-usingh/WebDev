@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+nav{
+    display: flex;
+  
+    justify-content: space-between;
+    font-size: large;
+    height: 100px;
+    background-color: bisque;
+}
+#tw{
+    height: 100px;
+    width: 500px;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-around;
+}
+#on{
+    margin-left: 80px;
+    margin-top: 27px;
+
+}
+#on span{
+    color: red;
+}
+#th{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 28px;
+    width: 80px;
+    border-radius: 16px;
+    margin-top: 27px;
+    margin-right: 50px;
+    border: 2px solid black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav div:hover{
+    color: aquamarine;
+    transition: 0.8s;
+}
+#tw div a:hover{
+     color: aquamarine;
+    transition: 0.8s;
+
+}
+main{
+    margin-top: 300px;
+    margin-left: 100px;
+}
+#b button{
+    width: 120px;
+    height: 25px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+#h h1{
+   margin-bottom: 10px;
+   font-size: 69px;
+   transition: 0.5s;
+}
+h1 span{
+    color: red;
+}
+
+#pa{
+margin-top: 20px;
+}
+ #buttons div{
+    height: 50px;
+    width: 200px;
+    border-radius: 16px;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+ }
+ #buttons{
+    margin-top: 60px;
+    display: flex;
+    gap: 16px ;
+ }
+ #left{
+    background-color: black;
+ }
+ #left a{
+    color: aliceblue;
+ }
+ main{
+    display: flex;
+    justify-content: space-between;
+ }
+ #h h1:hover{
+    transform: translateX(10px) translateY(-10px);
+ }
+ #card1{
+    margin-right: 180px;
+    height: 500px;
+    width: 600px;
+    /* border: 2px solid; */
+    background-color: orangered;
+    animation-name:back;
+    animation-duration:4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:  infinite;
+    animation-direction: alternate;
+}
+ @keyframes back {
+    0%{
+  border-radius: 120% 20% 30% 40% / 50% 520% 50% 50%;
+    }
+    50%{
+  /* border-radius: 410% 620% 220% 10% / 110% 20% 30% 430%; */
+
+    }
+    75%{
+    border-radius: 450% 650% 20% 10% / 130% 20% 350% 40%;
+
+    }
+    100%{
+  border-radius: 120% 20% 340% 40% / 50% 520% 50% 50%;
+
+    }
+    
+ }
+ #card2{
+
+ }
