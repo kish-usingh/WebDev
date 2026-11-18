@@ -1,0 +1,23 @@
+h1{
+    font-size: 30px;
+    font-family:cursive;
+    
+}
+#main{
+display:flex;
+/* align-items: center;  */ 
+justify-content: center;
+}
+#buttons{
+    display: flex;
+    justify-content: center;
+
+}
+.a{
+    height: 100px;
+    width: 100px;
+}
+
+body{
+    background-color: tan;
+}

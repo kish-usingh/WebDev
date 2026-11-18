@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="y" class="hehe">hello</h1>
+    <h1 id="y" class="hehe">hello</h1>
+    <h1 id="y" class="hehe">hello</h1>
+    <button>click meeee!!!!</button>
+
+    <script>
+        // Id selector sirf id select krta h 
+        let yoo=document.getElementById("y") //id select kr rhe ho tho sirf ek elememt return krega
+        // yoo.style.color="red"
+        // yoo.innerText="hahahahahaah" 
+
+        // class selector -class se select krta h 
+         let ye = document.getElementsByClassName("hehe")// ye ek array banake return krta h []
+        console.log(ye); 
+        //kuch bhi kerenge tho index batani padegi
+        // ye.style.color="red"
+            ye[0].style.color ="red"
+        //agr bahut sare h tho loop laga ke sabme color change kr do 
+
+        //Query selector -kuch bhi select kr leta h id , class , element 
+
+        let yummy=document.querySelector("h1")// #id , .class , normal selector 
+        yummy.style.color="red"
+        //hamesa jo sabse phle milega usko select kr lega
+        //abhi query selector all -ye bhi array bana deta h fhir index deke loop laga ke change krte raho 
+
+        let yummye=document.querySelectorAll("h1") 
+        for(let i=0;i<yummye.length;i++){
+            yummye[i].style.color="red"
+        }
+            // element ke ander ka text control krna ho tho "inner text"
+
+            let btn=document.querySelector("button")
+            let body=document.querySelector('body')
+            // btn.onclick=function(){
+            //     body.style.backgroundColor='pink'
+            // }
+            btn.onclick=tommy
+            let a=true;
+            function tommy(){
+               if(a){
+                body.style.backgroundColor='pink'
+                a=false
+               }
+               else{
+                body.style.backgroundColor='tan'
+                a=true
+               }
+
+            } 
+            
+
+
+
+    </script>
+    
+</body>
+</html>
