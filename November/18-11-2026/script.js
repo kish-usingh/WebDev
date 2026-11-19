@@ -1,29 +1,50 @@
 let button = document.querySelectorAll(".a");
 
-for (let i=0; i<button.length; i++) {
-    button[i].addEventListener("click", function() {
-        // Use the button's ID instead of innerHTML
-        let buttonId = button[i].id; 
+// for (let i=0; i<button.length; i++) {
+//     button[i].addEventListener("click", function() {
+//         // Use the button's ID instead of innerHTML
+//         let buttonId = button[i].id; 
         
-        // Map the button ID to the corresponding audio ID
-        let audioIdMap = {
-            "a1": "d",
-            "a2": "r",
-            "a3": "u",
-            "a4": "m",
-            "a5": "s",
-            "a6": "h",
-            "a7": "i"
-        };
+//         // Map the button ID to the corresponding audio ID
+//         let audioIdMap = {
+//             "a1": "d",
+//             "a2": "r",
+//             "a3": "u",
+//             "a4": "m",
+//             "a5": "s",
+//             "a6": "h",
+//             "a7": "i"
+//         };
         
-        let audioId = audioIdMap[buttonId];
-        let audio = document.querySelector("#" + audioId);
+//         let audioId = audioIdMap[buttonId];
+//         let audio = document.querySelector("#" + audioId);
         
-        if(audio) {
-            audio.play();
-        } else {
-            console.error("Audio element not found for ID: " + audioId);
-        }
-        audio.currentTime=0;
-    });
+//         if(audio) {
+//             audio.play();
+//         } else {
+//             console.error("Audio element not found for ID: " + audioId);
+//         }
+//         audio.currentTime=0;
+//     });
+// }
+
+
+for (let i=0;i<button.length;i++){
+    button[i].addEventListener("click",function(){
+        let buttonName = button[i].innerHTML.toLowerCase();
+        let audio = document.querySelector("#"+ buttonName)
+        audio.play();
+
+        audio.currentTime = 0;
+    })
+
 }
+document.addEventListener("keydown",function(event){
+
+    var buttonname=event.key.toLowerCase();
+
+    var audio=document.querySelector("#" + buttonname);
+
+    audio.play();
+
+})

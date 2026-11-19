@@ -21,3 +21,47 @@ justify-content: center;
 body{
     background-color: tan;
 }
+#a1{
+    background-image: url(./music/1.jpeg);
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+}
+#a2{
+    background-image: url(./music/2.jpeg);
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+}#a3{
+    background-image: url(./music/3.jpeg);
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+}#a4{
+    background-image: url(./music/4.jpeg);
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+}#a5{
+    background-image: url(./music/5.jpeg);
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+}#a6{
+    background-image: url(./music/6.jpeg);
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+}#a7{
+    background-image: url(./music/7.jpeg);
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+}
